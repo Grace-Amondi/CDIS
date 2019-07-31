@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load i18n %}
+{% comment %}
+This is where you can override the hero area block. You can simply modify the content below or replace it wholesale to meet your own needs.
+{% endcomment %}
+  {% block hero %}
+  <div class="jumbotron">
+    <div class="container">
+        <h1>{% trans "County Development Information System Portal" %}</h1>
+        <!-- <div class="hero-unit-content"/> -->
+        <!-- <div class="intro">
+            <img src = 'http://uwigsmona.weebly.com/uploads/1/3/2/4/13241997/1345164334.png'>
+        </div> -->
+        <p>
+            {% blocktrans %}
+            County Development Information System Portal
+            {% endblocktrans %}
+        </p>
+        
+<p><a class="btn btn-default btn-lg" target="_blank" href="/docs/index.html" role="button">Get Started &gt;</a></p>    </div>
+  </div>
+  {% endblock %}
